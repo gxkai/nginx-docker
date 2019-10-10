@@ -1,14 +1,25 @@
 FROM node:10
 
 
-WORKDIR /usr/src/app
+#WORKDIR /app
+#
+#COPY package.json ./
+#RUN cnpm i -g pm2
+#RUN cnpm install
+#
+#COPY . .
 
-COPY package.json ./
 
-RUN yarn install
+ENV HOME=/app
 
-COPY . .
+COPY package.json $HOME/
+
+WORKDIR $HOME
+
+RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+RUN cnpm i -g pm2
+RUN cnpm install
+
+COPY ./dist $HOME/
 
 EXPOSE 4000
-
-CMD ["yarn", "start"]

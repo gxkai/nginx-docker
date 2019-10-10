@@ -14,30 +14,35 @@ services:
       - nginx_frontend
       - nginx_api
     ports:
-      - 80:80
+      - 8080:80
       - 443:443
     networks:
-      - nginx
+      - backend
 
   nginx_frontend:
     container_name: nginx_frontend
+    volumes:
+      - $PWD/frontend/dist:/var/www
     build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
       - 3000:3000
     networks:
-      - nginx
+      - backend
 
   nginx_api: 
     container_name: nginx_api
     build:
       context: ./api
       dockerfile: Dockerfile
+    command: npm run prod
+    volumes:
+      - $PWD/api:/app
+      - /app/node_modules
     ports:
       - 4000:4000
     networks:
-      - nginx
-
+      - backend
 networks:
-  nginx:
+  backend:
