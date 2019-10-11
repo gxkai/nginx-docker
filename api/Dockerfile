@@ -1,15 +1,5 @@
 FROM node:10
 
-
-#WORKDIR /app
-#
-#COPY package.json ./
-#RUN cnpm i -g pm2
-#RUN cnpm install
-#
-#COPY . .
-
-
 ENV HOME=/app
 
 COPY package.json $HOME/

@@ -3,9 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = require("path");
 exports.default = {
     port: 4000,
+    hostName: '0.0.0.0',
     orm: {
         type: 'mysql',
-        host: 'mysql',
+        host: process.env.MYSQL_HOST,
         port: 3306,
         username: 'root',
         password: '123456',

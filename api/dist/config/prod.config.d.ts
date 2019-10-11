@@ -1,5 +1,6 @@
 declare const _default: {
     port: number;
+    hostName: string;
     orm: {
         type: string;
         host: string;

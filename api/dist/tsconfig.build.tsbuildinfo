@@ -2138,11 +2138,11 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "/users/guxukai/webstormprojects/awesome-nest/src/config/prod.config.ts": {
-        "version": "fb7c66f793540796bdb44e5572ee85714dd6e1555f1bf742a27fe2209416845a",
-        "signature": "7d7453ab568abd3e28df527264a3fb85a74fdae6ee9584b6fa38df42e5000fa0"
+        "version": "e4415a705d71421fecbcfcd684996cc032bb8611bb401e900d12a06cdda7639e",
+        "signature": "bfa1b59c362bbf13ea24e1ba7dd6fd8303f0b65bcf174a14aa6aa0b10f52f999"
       },
       "/users/guxukai/webstormprojects/awesome-nest/src/config/index.ts": {
-        "version": "861aacf9e3f5ddf3659557fd48732fe0698ea36b4ce36205ce986934d6e53f67",
+        "version": "ff9d6b10c23c6040d1e171297d8a4259000eb152fc3dccce7054da0ccaa0094f",
         "signature": "5eb77bf2375d4080d2f1488fc04dde8f56cb3cf85dac186c160dd6b43fdfa8ae"
       },
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/class-validator/validation/validationerror.d.ts": {
@@ -13350,7 +13350,6 @@
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/@nestjs/typeorm/dist/index.d.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/@nestjs/typeorm/index.d.ts",
-      "/users/guxukai/webstormprojects/awesome-nest/src/config/index.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/class-validator/validation/validationerror.d.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/class-validator/validation/validatoroptions.d.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/class-validator/validation-schema/validationschema.d.ts",
@@ -13589,7 +13588,8 @@
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/@types/semver/index.d.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/@types/superagent/index.d.ts",
       "/users/guxukai/webstormprojects/awesome-nest/node_modules/@types/supertest/index.d.ts",
-      "/users/guxukai/webstormprojects/awesome-nest/src/config/prod.config.ts"
+      "/users/guxukai/webstormprojects/awesome-nest/src/config/prod.config.ts",
+      "/users/guxukai/webstormprojects/awesome-nest/src/config/index.ts"
     ]
   },
   "version": "3.4.3"
