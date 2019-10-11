@@ -5,7 +5,7 @@ exports.default = {
     port: 4000,
     orm: {
         type: 'mysql',
-        host: '139.196.102.55',
+        host: 'mysql',
         port: 3306,
         username: 'root',
         password: '123456',
