@@ -1,6 +1,26 @@
 version: '3'
 
 services:
+  jenkins:
+    container_name: jenkins
+    build:
+      context: ./jenkins
+      dockerfile: Dockerfile
+    image: jenkins
+    restart: always
+    volumes:
+      - $PWD/jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $(which docker):/usr/bin/docker
+    ports:
+      - 8080:8080
+      - 5000:5000
+    networks:
+      - backend
+    depends_on:
+      - gateway
+      - api
+      - frontend
   gateway:
     container_name: gateway
     build:
