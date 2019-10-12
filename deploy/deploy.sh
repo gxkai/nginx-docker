@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+VOLUME="nginx-docker"
 NAME="$1"
 PATH="/github/$1"
 USER="root"
@@ -12,20 +13,20 @@ git reset --hard origin/master
 git clean -f
 git pull
 git checkout master
-if [[ $NAME = "vue-test" ]]; then
+if [[ ${NAME} = "vue-test" ]]; then
     echo "delete dist"
     rm -rf dist
     echo "build dist"
     npm run build
-    cp -r dist ../frontend
+    cp -r dist /${VOLUME}/frontend
 fi
-if [[ $NAME = "awesome-nest" ]]; then
+if [[ ${NAME} = "awesome-nest" ]]; then
     echo "delete dist"
     rm -rf dist
     echo "build dist"
     npm run build
-    cp -r dist ../api
-    cp pakage.json ../api
+    cp -r dist /${VOLUME}/api
+    cp pakage.json /${VOLUME}/api
     npm i
     docker exec -it api pm2 reload all
 fi
