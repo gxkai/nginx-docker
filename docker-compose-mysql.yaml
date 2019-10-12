@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:5.7
+    hostname: mysql
+    restart: always
+    volumes:
+      - $PWD/mysql:/var/lib/mysql
+    environment:
+      - "MYSQL_DATABASE=test"
+      - "MYSQL_USER=test"
+      - "MYSQL_PASSWORD=test"
+      - "MYSQL_ROOT_PASSWORD=123456"
+    ports:
+      - "3306:3306"
+    networks:
+      - backend
+networks:
+  backend:
