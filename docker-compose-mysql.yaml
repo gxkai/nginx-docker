@@ -6,8 +6,6 @@ services:
     image: mysql:5.7
     hostname: mysql
     restart: always
-    volumes:
-      - $PWD/mysql:/var/lib/mysql
     environment:
       - "MYSQL_DATABASE=test"
       - "MYSQL_USER=test"
