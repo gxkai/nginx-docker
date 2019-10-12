@@ -12,14 +12,14 @@ git reset --hard origin/master
 git clean -f
 git pull
 git checkout master
-if [ $NAME = "vue-test" ]; then
+if [[ $NAME = "vue-test" ]]; then
     echo "delete dist"
     rm -rf dist
     echo "build dist"
     npm run build
     cp -r dist ../frontend
 fi
-if [ $NAME = "awesome-nest" ]; then
+if [[ $NAME = "awesome-nest" ]]; then
     echo "delete dist"
     rm -rf dist
     echo "build dist"
