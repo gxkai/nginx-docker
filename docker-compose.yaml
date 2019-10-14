@@ -23,7 +23,7 @@ services:
     container_name: html
     restart: always
     volumes:
-      - $PWD/html/vue-site/dist:/var/www
+      - $PWD/deploy/vue-site/dist:/var/www
       - $PWD/html/nginx/nginx.conf:/etc/nginx/nginx.conf
     build:
       context: ./html
@@ -44,7 +44,7 @@ services:
     command: npm run prod
     hostname: api
     volumes:
-      - $PWD/api/awesome-nest:/app
+      - $PWD/deploy//awesome-nest:/app
     ports:
       - 4000:4000
     networks:
