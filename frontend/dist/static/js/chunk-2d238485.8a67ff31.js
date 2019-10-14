@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d238485"],{ff5d:function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("router-view")},r=[],u={name:"NoticeIndex"},o=u,a=t("2877"),i=Object(a["a"])(o,c,r,!1,null,"552f25ec",null);n["default"]=i.exports}}]);
