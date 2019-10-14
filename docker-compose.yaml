@@ -44,7 +44,7 @@ services:
     command: npm run prod
     hostname: api
     volumes:
-      - $PWD/api/awesome-nest/dist:/app
+      - $PWD/api/awesome-nest:/app
     ports:
       - 4000:4000
     networks:
