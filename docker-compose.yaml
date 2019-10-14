@@ -23,7 +23,7 @@ services:
     container_name: html
     restart: always
     volumes:
-      - $PWD/html/vue-sit/dist:/var/www
+      - $PWD/html/vue-site/dist:/var/www
       - $PWD/html/nginx/nginx.conf:/etc/nginx/nginx.conf
     build:
       context: ./html
